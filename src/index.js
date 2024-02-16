@@ -154,7 +154,7 @@ export const ICONS = [
 		icon: wordpress,
 	},
 	{
-		label: __( 'GitHub', 'ankur-button-icons' ),
+		label: __( 'GitHub', 'enable-button-icons' ),
 		value: 'github',
 		icon: github,
 	},
