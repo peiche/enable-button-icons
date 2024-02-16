@@ -1,13 +1,12 @@
 <?php
 /**
  * Plugin Name:         Enable Button Icons
- * Plugin URI:          https://www.nickdiego.com/
+ * Plugin URI:          https://github.com/peiche/enable-button-icons
  * Description:         Add icons to Button blocks.
- * Version:             0.1.0
+ * Version:             0.1.1
  * Requires at least:   6.3
  * Requires PHP:        7.4
- * Author:              Nick Diego
- * Author URI:          https://www.nickdiego.com
+ * Author:              Nick Diego, Paul Eiche
  * License:             GPLv2
  * License URI:         https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain:         enable-button-icons
