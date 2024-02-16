@@ -37,6 +37,7 @@ import {
 	shuffle,
 	wordpress,
 } from '@wordpress/icons';
+import github from './icons/github';
 
 /**
  * All available icons.
@@ -151,6 +152,11 @@ export const ICONS = [
 		label: __( 'WordPress', 'enable-button-icons' ),
 		value: 'wordpress',
 		icon: wordpress,
+	},
+	{
+		label: __( 'GitHub', 'ankur-button-icons' ),
+		value: 'github',
+		icon: github,
 	},
 ];
 

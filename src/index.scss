@@ -1,3 +1,27 @@
+$icons: (
+    "arrow-left" 1em 0.7em,
+    "arrow-right" 1em 0.7em,
+    "cloud" 1em 0.7em,
+    "cloud-upload" 1em 0.7em,
+    "chevron-left" 0.45em 0.8em,
+    "chevron-right" 0.45em 0.8em,
+    "chevron-left-small" 0.3em 0.5em,
+    "chevron-right-small" 0.3em 0.5em,
+    "comment-author-avatar" 0.9em 0.9em,
+    "help" 0.9em 0.9em,
+    "info" 0.9em 0.9em,
+    "download" 0.75em 0.8em,
+    "external" 0.7em 0.7em,
+    "external-arrow" 0.6em 0.6em,
+    "lock-outline" 0.64em 0.9em,
+    "login" 0.8em 0.8em,
+    "next" 0.775em 0.75em,
+    "previous" 0.775em 0.75em,
+    "shuffle" 0.9em 0.9em,
+    "wordpress" 0.9em 0.9em,
+    "github" 0.9em 0.9em,
+);
+
 .wp-block-button[class*=has-icon__] {
     .wp-block-button__link {
         display: flex;
@@ -14,89 +38,12 @@
         }
     }
 
-    &.has-icon__arrow-left,
-    &.has-icon__arrow-right,
-    &.has-icon__cloud,
-    &.has-icon__cloud-upload {
-        svg {
-            height: 0.7em;
-            width: 1em;
-        }
-    }
-
-    &.has-icon__chevron-left,
-    &.has-icon__chevron-right {
-        svg {
-            height: 0.8em;
-            width: 0.45em;
-        }
-    }
-
-    &.has-icon__chevron-left-small,
-    &.has-icon__chevron-right-small {
-        svg {
-            height: 0.5em;
-            width: 0.3em;
-        }
-    }
-
-    &.has-icon__comment-author-avatar,
-    &.has-icon__help,
-    &.has-icon__info {
-        svg {
-            height: 0.9em;
-            width: 0.9em;
-        }
-    }
-
-    &.has-icon__download {
-        svg {
-            height: 0.8em;
-            width: 0.75em;
-        }
-    }
-
-    &.has-icon__external {
-        svg {
-            height: 0.7em;
-            width: 0.7em;
-        }
-    }
-
-    &.has-icon__external-arrow {
-        svg {
-            height: 0.6em;
-            width: 0.6em;
-        }
-    }
-
-    &.has-icon__lock-outline {
-        svg {
-            height: 0.9em;
-            width: 0.64em;
-        }
-    }
-
-    &.has-icon__login {
-        svg {
-            height: 0.8em;
-            width: 0.8em;
-        }
-    }
-
-    &.has-icon__next,
-    &.has-icon__previous {
-        svg {
-            height: 0.75em;
-            width: 0.775em;
-        }
-    }
-
-    &.has-icon__shuffle,
-    &.has-icon__wordpress {
-        svg {
-            height: 0.9em;
-            width: 0.9em;
+    @each $icon_name, $width, $height in $icons {
+        &.has-icon__#{$icon_name} {
+            svg {
+                width: $width;
+                height: $height;
+            }
         }
     }
 } 
