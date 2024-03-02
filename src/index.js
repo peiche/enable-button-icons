@@ -35,9 +35,13 @@ import {
 	next,
 	previous,
 	shuffle,
+	starEmpty,
+	starFilled,
+	starHalf,
 	wordpress,
 } from '@wordpress/icons';
 import github from './icons/github';
+import loan from './icons/loan';
 
 /**
  * All available icons.
@@ -157,6 +161,26 @@ export const ICONS = [
 		label: __( 'GitHub', 'enable-button-icons' ),
 		value: 'github',
 		icon: github,
+	},
+	{
+		label: __( 'Loan', 'enable-button-icons' ),
+		value: 'loan',
+		icon: loan,
+	},
+	{
+		label: __( 'Star Empty', 'enable-button-icons' ),
+		value: 'star-empty',
+		icon: starEmpty,
+	},
+	{
+		label: __( 'Star Filled', 'enable-button-icons' ),
+		value: 'star-filled',
+		icon: starFilled,
+	},
+	{
+		label: __( 'Star Half', 'enable-button-icons' ),
+		value: 'star-half',
+		icon: starHalf,
 	},
 ];
 

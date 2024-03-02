@@ -19,7 +19,11 @@ $icons: (
 	"previous" 0.775em 0.75em,
 	"shuffle" 0.9em 0.9em,
 	"wordpress" 0.9em 0.9em,
-	"github" 0.9em 0.9em,
+	"github" 1em 1em,
+	"loan" 1em 1em,
+	"star-empty" 1em 1em,
+	"star-filled" 1em 1em,
+	"star-half" 1em 1em,
 );
 
 .wp-block-button[class*="has-icon__"] {
@@ -46,6 +50,16 @@ $icons: (
 				width: $width;
 				height: $height;
 			}
+		}
+	}
+
+	// override for tiny icons
+	&.has-icon__star-empty,
+	&.has-icon__star-filled,
+	&.has-icon__star-half {
+
+		svg {
+			transform: scale(1.5);
 		}
 	}
 }
